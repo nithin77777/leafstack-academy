@@ -143,8 +143,28 @@
 
 			.top-nav {
 				display: flex;
-				justify-content: flex-end;
+				justify-content: space-between;
+				align-items: center;
+				gap: 12px;
 				margin-bottom: 14px;
+			}
+
+			.brand {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				text-decoration: none;
+			}
+
+			.logo {
+				display: block;
+				width: 130px;
+				max-width: 44vw;
+				height: auto;
+				border-radius: 14px;
+				background: rgba(255, 255, 255, 0.55);
+				border: 1px solid rgba(117, 176, 111, 0.22);
+				box-shadow: 0 10px 24px rgba(33, 60, 81, 0.08);
 			}
 
 			.nav-btn {
@@ -214,6 +234,9 @@
 	<body>
 		<div class="container">
 			<div class="top-nav">
+				<a class="brand" href="index.html" aria-label="Leafstack home">
+					<img class="logo" src="logo.png" alt="Leafstack logo" />
+				</a>
 				<a class="nav-btn" href="roadmap.html">Roadmap</a>
 			</div>
 			<section>
