@@ -17,7 +17,12 @@
 
 - Keep pages as **plain static HTML** with **inline `<style>`** (no build tools/frameworks in repo right now).
 - Use the existing look-and-feel:
-  - Dark theme with CSS variables in `:root` (see [index.html](../index.html)).
+  - Theme is set via CSS variables in `:root` (see [index.html](../index.html) and [roadmap.html](../roadmap.html)).
+  - Use this **4-color palette** (only these hexes; everything else derived via `rgba(...)`):
+    - Background: `#F6F0D7`
+    - Text: `#213C51`
+    - Accent: `#75B06F`
+    - Accent-2: `#C5D89D`
   - Mobile-first container widths (~720–760px), large tappable CTAs, minimal clutter.
 - CTAs:
   - Use `https://wa.me/YOUR_NUMBER_HERE?text=...` with **URL-encoded** text.

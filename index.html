@@ -10,14 +10,17 @@
 
 		<style>
 			:root {
+				/* 4-color palette */
 				--bg: #f6f0d7;
-				--card: #ffffff;
-				--text: #2a2f25;
-				--muted: #5b6a52;
-				--accent: #89986d;
+				--text: #213c51;
+				--accent: #75b06f;
 				--accent-2: #c5d89d;
-				--accent-soft: rgba(137, 152, 109, 0.18);
-				--success: #9cab84;
+
+				/* Derived tones (avoid new hex colors) */
+				--card: rgba(255, 255, 255, 0.72);
+				--muted: rgba(33, 60, 81, 0.74);
+				--accent-soft: rgba(117, 176, 111, 0.18);
+				--success: var(--accent);
 			}
 
 			* {
@@ -89,7 +92,7 @@
 			}
 
 			.card {
-				background: rgba(255, 255, 255, 0.72);
+				background: var(--card);
 				border-radius: 18px;
 				padding: 20px;
 				margin-bottom: 24px;
