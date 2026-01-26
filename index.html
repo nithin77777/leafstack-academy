@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Leafstacked | Python + Django for Freshers</title>
+		<title>Leafstack | Python + Django for Freshers</title>
 
 		<style>
 			:root {
@@ -158,6 +158,56 @@
 				background: var(--accent-soft);
 				border: 1px solid rgba(117, 176, 111, 0.28);
 			}
+
+			.kicker {
+				font-size: 14px;
+				color: var(--muted);
+				margin-top: 10px;
+			}
+
+			.pills {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin-top: 14px;
+			}
+
+			.pill {
+				display: inline-block;
+				padding: 10px 12px;
+				border-radius: 999px;
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 14px;
+				color: var(--text);
+				background: rgba(255, 255, 255, 0.55);
+				border: 1px solid rgba(33, 60, 81, 0.16);
+			}
+
+			details {
+				border: 1px solid rgba(33, 60, 81, 0.16);
+				border-radius: 14px;
+				padding: 12px 14px;
+				background: rgba(255, 255, 255, 0.5);
+				margin-top: 10px;
+			}
+
+			summary {
+				cursor: pointer;
+				font-weight: 800;
+				color: var(--text);
+				list-style: none;
+			}
+			summary::-webkit-details-marker {
+				display: none;
+			}
+
+			.summary-hint {
+				color: var(--muted);
+				font-size: 14px;
+				margin-top: 8px;
+				margin-bottom: 0;
+			}
 		</style>
 	</head>
 
@@ -167,78 +217,141 @@
 				<a class="nav-btn" href="roadmap.html">Roadmap</a>
 			</div>
 			<section>
-				<span class="badge">For Freshers & Beginners</span>
-				<h1>
-					Confused After Graduation?<br />Learn Python + Django the Right Way.
-				</h1>
+				<span class="badge">For Freshers • Calm, Step-by-step</span>
+				<h1>From “I don’t know coding” → “I can build Django websites.”</h1>
 				<p>
-					Leafstacked is a guided learning path for freshers who want real
-					skills. Start from zero, build real Django projects, and gain
-					confidence to apply for jobs or freelancing.
+					Leafstack is a beginner-first learning path where you learn Python,
+					understand how websites work, and build real Django projects — with a
+					small batch and a study-buddy vibe.
+				</p>
+
+				<p class="kicker">
+					No pressure. No jargon. Just steady progress + projects you can
+					actually explain.
 				</p>
 
 				<a
-					href="https://wa.me/YOUR_NUMBER_HERE?text=Hi%20I%20just%20graduated%20and%20want%20clarity%20on%20learning%20Python%20and%20Django"
+					href="https://wa.me/YOUR_NUMBER_HERE?text=Hi%20I%20am%20a%20fresher.%20I%20want%20to%20learn%20Python%20%2B%20Django%20with%20projects.%20Can%20you%20share%20batch%20details%20%2B%20the%20roadmap%3F"
 					class="cta-btn"
 				>
-					Talk to Me on WhatsApp
+					Get Batch Details on WhatsApp
 				</a>
 
-				<a href="roadmap.html" class="cta-btn secondary">
-					See the Learning Roadmap
-				</a>
+				<a href="roadmap.html" class="cta-btn secondary">See the Roadmap</a>
 
-				<p style="font-size: 14px; margin-top: 8px">
-					Small batches • Beginner-friendly • No pressure
+				<div class="pills" aria-label="Quick start options">
+					<a
+						class="pill"
+						href="https://wa.me/YOUR_NUMBER_HERE?text=Hi%20I%20am%20a%20complete%20beginner%20(0%20coding).%20Can%20I%20still%20join%20Leafstack%3F%20What%20should%20I%20start%20with%3F"
+					>
+						I’m a complete beginner
+					</a>
+					<a
+						class="pill"
+						href="https://wa.me/YOUR_NUMBER_HERE?text=Hi%20I%20know%20some%20Python%20basics.%20I%20want%20to%20build%20Django%20projects%20for%20my%20resume.%20What%20does%20Leafstack%20cover%3F"
+					>
+						I know basics
+					</a>
+					<a
+						class="pill"
+						href="https://wa.me/YOUR_NUMBER_HERE?text=Hi%20I%20want%20to%20join%20with%20a%20friend.%20Can%20we%20learn%20together%20and%20get%20project%20guidance%3F"
+					>
+						Joining with a friend
+					</a>
+				</div>
+
+				<p style="font-size: 14px; margin-top: 12px">
+					Small batches • Beginner-friendly • Projects first
 				</p>
 			</section>
 
 			<section class="card">
-				<h2>Your Learning Path</h2>
+				<h2>Your Learning Path (What you’ll actually do)</h2>
 				<div class="steps">
 					<div class="step">
 						<span>1</span>
-						<p>Python basics from absolute zero.</p>
+						<p>Start from zero: Python basics + confidence.</p>
 					</div>
 					<div class="step">
 						<span>2</span>
-						<p>How websites really work.</p>
+						<p>Understand the web: requests, pages, data — in simple terms.</p>
 					</div>
 					<div class="step">
 						<span>3</span>
-						<p>Django step-by-step with real features.</p>
+						<p>Django step-by-step: auth, CRUD, forms, DB, deployments.</p>
 					</div>
 					<div class="step">
 						<span>4</span>
-						<p>Projects you can confidently explain.</p>
+						<p>Build portfolio projects you can confidently explain.</p>
 					</div>
 				</div>
+
+				<details>
+					<summary>Buddy Mode (student-to-student)</summary>
+					<p class="summary-hint">
+						You don’t learn alone here. Pair up with a buddy, do small weekly
+						check-ins, and share progress like “I shipped this!”
+					</p>
+					<p class="summary-hint">
+						Starter prompt to send your friend: “Join me for 30 mins today —
+						we’ll finish one small task and update each other.”
+					</p>
+					<p class="summary-hint" style="margin-top: 10px">
+						<a
+							href="https://wa.me/YOUR_NUMBER_HERE?text=Hey!%20I%20am%20starting%20Leafstack%20(Python%20%2B%20Django).%20Want%20to%20be%20my%20study%20buddy%3F%20We%20can%20do%2030%20mins%20daily%20and%20share%20wins."
+							class="pill"
+						>
+							Invite a friend
+						</a>
+					</p>
+				</details>
 			</section>
 
 			<section class="card">
 				<h2>Who Will Teach You?</h2>
 				<p>
-					I’m a Django developer who started confused after graduation. I
-					learned by building real projects, not memorizing tutorials.
-					Leafstacked exists so you don’t waste years figuring things out.
+					I’m a Django developer who started confused after graduation too. I
+					learned by building real projects (and making mistakes), not by
+					watching endless tutorials.
 				</p>
+				<p>
+					Leafstack is the path I wish I had: simple, practical, and focused on
+					shipping.
+				</p>
+
+				<details>
+					<summary>What if I feel slow or stuck?</summary>
+					<p class="summary-hint">
+						Normal. The goal is steady progress, not speed. You’ll get
+						bite-sized tasks, project guidance, and a clear next step every
+						time.
+					</p>
+				</details>
+				<details>
+					<summary>Will I have projects for my resume?</summary>
+					<p class="summary-hint">
+						Yes — you’ll build real Django apps and learn to explain them like
+						an interview story: problem → approach → features → tradeoffs.
+					</p>
+				</details>
 			</section>
 
 			<section class="footer-cta">
-				<h2>Ready to Get Clarity?</h2>
+				<h2>Ready to Start (Without Overthinking)?</h2>
 				<p>
-					Message me. I’ll help you understand if this path is right for you.
+					Message me your current level. I’ll suggest the best starting point
+					and share batch details.
 				</p>
 
 				<a
-					href="https://wa.me/YOUR_NUMBER_HERE?text=I%20want%20to%20understand%20the%20Leafstacked%20learning%20path"
+					href="https://wa.me/YOUR_NUMBER_HERE?text=Hi%20My%20current%20level%20is%20____.%20I%20want%20to%20start%20Leafstack.%20Please%20share%20batch%20details%20and%20how%20we%20build%20projects."
 					class="cta-btn"
 				>
-					Message Me on WhatsApp
+					Message on WhatsApp
 				</a>
 
 				<p style="font-size: 14px; margin-top: 10px">
-					Next batch starting soon. Limited seats.
+					Next batch starting soon • Limited seats • Beginner-safe pace
 				</p>
 			</section>
 

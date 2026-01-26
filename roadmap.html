@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Leafstacked | Learning Roadmap</title>
+		<title>Leafstack | Learning Roadmap</title>
 
 		<style>
 			:root {
@@ -86,6 +86,46 @@
 				text-decoration: none;
 				margin-top: 16px;
 			}
+
+			.kicker {
+				font-size: 14px;
+				margin-top: 8px;
+				color: var(--muted);
+			}
+
+			.tag {
+				display: inline-block;
+				padding: 6px 10px;
+				border-radius: 999px;
+				background: var(--accent-soft);
+				color: var(--accent);
+				font-weight: 700;
+				font-size: 13px;
+				margin-bottom: 10px;
+			}
+
+			details {
+				border: 1px solid rgba(33, 60, 81, 0.16);
+				border-radius: 14px;
+				padding: 12px 14px;
+				background: rgba(255, 255, 255, 0.5);
+				margin-top: 10px;
+			}
+			summary {
+				cursor: pointer;
+				font-weight: 800;
+				color: var(--text);
+				list-style: none;
+			}
+			summary::-webkit-details-marker {
+				display: none;
+			}
+			.note {
+				margin-top: 8px;
+				margin-bottom: 0;
+				font-size: 14px;
+				color: var(--muted);
+			}
 		</style>
 	</head>
 
@@ -93,45 +133,126 @@
 		<div class="container">
 			<section class="card">
 				<a class="nav" href="index.html">← Back to Home</a>
-				<h1>Leafstacked Learning Roadmap</h1>
-				<p>This page is for students who want clarity before joining.</p>
+				<span class="tag">Clarity in 2 minutes</span>
+				<h1>Leafstack Learning Roadmap</h1>
+				<p>
+					If you’re a fresher and everything feels confusing, this roadmap gives
+					you one clean path: learn basics → build Django apps → explain them
+					like an interview story.
+				</p>
+				<p class="kicker">
+					Bonus: it’s designed for small-batch + buddy learning (so you don’t
+					ghost after 3 days).
+				</p>
+			</section>
+
+			<section class="card">
+				<h2>Buddy Mode (student-to-student)</h2>
+				<p>Learning alone is hard. So we keep it simple:</p>
+				<ul>
+					<li>Pick a buddy (friend or batchmate)</li>
+					<li>Daily 30 mins “ship something small” session</li>
+					<li>Weekly demo: show what you built in 2 minutes</li>
+				</ul>
+				<a
+					href="https://wa.me/YOUR_NUMBER_HERE?text=Hey!%20I%20am%20following%20the%20Leafstack%20roadmap.%20Want%20to%20be%20my%20study%20buddy%3F%2030%20mins%20daily%20%2B%20weekly%20demo."
+					class="cta-btn"
+				>
+					Invite a Friend to Join You
+				</a>
+				<p class="kicker">
+					Tip: even if you’re both beginners, you’ll progress faster together.
+				</p>
 			</section>
 
 			<section class="card">
 				<h2>Phase 1: Python Foundations</h2>
+				<p class="kicker">Goal: feel confident writing basic logic.</p>
 				<ul>
-					<li>Programming basics</li>
-					<li>Python syntax & logic</li>
-					<li>Problem solving mindset</li>
+					<li>Programming basics (variables, loops, functions)</li>
+					<li>Python syntax + logic with small practice</li>
+					<li>How to think: break problems into steps</li>
 				</ul>
+				<details>
+					<summary>Student prompt to ask your buddy</summary>
+					<p class="note">
+						“Explain today’s topic in 30 seconds. I’ll do the same.”
+					</p>
+				</details>
 			</section>
 
 			<section class="card">
 				<h2>Phase 2: Django & Web</h2>
+				<p class="kicker">Goal: understand how real websites are built.</p>
 				<ul>
-					<li>How the web works</li>
-					<li>Django projects & structure</li>
-					<li>Databases & dynamic pages</li>
+					<li>How the web works (request/response)</li>
+					<li>Django structure (apps, URLs, views, templates)</li>
+					<li>Database basics + CRUD pages</li>
 				</ul>
+				<details>
+					<summary>Mini-checkpoint (simple but powerful)</summary>
+					<p class="note">
+						If you can build one CRUD feature (add/edit/delete + list page), you
+						are already ahead of most freshers.
+					</p>
+				</details>
 			</section>
 
 			<section class="card">
 				<h2>Phase 3: Real Projects</h2>
+				<p class="kicker">
+					Goal: build portfolio projects + learn to explain them.
+				</p>
 				<ul>
-					<li>Solo project</li>
-					<li>Group project</li>
-					<li>Interview explanation skills</li>
+					<li>Solo project (you build end-to-end)</li>
+					<li>Group project (teamwork + roles + Git workflow basics)</li>
+					<li>Interview explanation skills (story format)</li>
 				</ul>
+				<details>
+					<summary>How students help each other here</summary>
+					<p class="note">
+						Buddy reviews: you demo your feature; your buddy asks questions like
+						“why did you do it this way?” This makes you interview-ready.
+					</p>
+				</details>
+			</section>
+
+			<section class="card">
+				<h2>Common Doubts (quick answers)</h2>
+				<details>
+					<summary>I’m from non-CS. Is this okay?</summary>
+					<p class="note">
+						Yes. We start from zero and focus on practice + projects. Non-CS
+						students usually do great when they follow a steady plan.
+					</p>
+				</details>
+				<details>
+					<summary>Do I need a strong laptop?</summary>
+					<p class="note">
+						A basic laptop is enough for Python + Django. We keep tooling
+						simple.
+					</p>
+				</details>
+				<details>
+					<summary>What if I miss days?</summary>
+					<p class="note">
+						You won’t be kicked out. We keep a clear “next step” so you can
+						restart without shame.
+					</p>
+				</details>
 			</section>
 
 			<section class="card">
 				<h2>Want to Join?</h2>
-				<p>Message me and we’ll see if this journey fits you.</p>
+				<p>
+					Message me your current level and your goal (job / internship /
+					freelance). I’ll guide you to the right start.
+				</p>
 				<a
-					href="https://wa.me/YOUR_NUMBER_HERE?text=I%20saw%20the%20Leafstacked%20roadmap%20and%20want%20clarity"
+					href="https://wa.me/YOUR_NUMBER_HERE?text=Hi%20I%20saw%20the%20Leafstack%20roadmap.%20My%20current%20level%20is%20____.%20My%20goal%20is%20____.%20Can%20you%20share%20batch%20details%20and%20project%20plan%3F"
 					class="cta-btn"
 				>
-					Message Me on WhatsApp
+					Message on WhatsApp
 				</a>
 			</section>
 		</div>
