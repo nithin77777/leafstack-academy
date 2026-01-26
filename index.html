@@ -1,0 +1,231 @@
+<!-- =============================== -->
+<!-- FILE 1: index.html (Main Page) -->
+<!-- =============================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leafstacked | Python + Django for Freshers</title>
+
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #0f172a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.15);
+      --success: #22c55e;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container { max-width: 720px; margin: auto; padding: 24px 16px 80px; }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    h1 { font-size: 32px; line-height: 1.2; margin-bottom: 12px; }
+    h2 { font-size: 24px; margin-bottom: 12px; }
+    p { color: var(--muted); font-size: 16px; margin-bottom: 16px; }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 16px;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #020617;
+      font-weight: 700;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .steps { display: grid; gap: 16px; }
+    .step { display: flex; gap: 12px; }
+    .step span {
+      min-width: 28px; height: 28px;
+      background: var(--accent-soft); color: var(--accent);
+      border-radius: 50%; display: flex;
+      align-items: center; justify-content: center;
+      font-weight: 600; font-size: 14px;
+    }
+
+    .highlight { color: var(--success); font-weight: 600; }
+
+    .footer-cta {
+      border-radius: 18px;
+      padding: 24px;
+      margin-top: 40px;
+      border: 1px dashed rgba(56,189,248,0.4);
+    }
+
+    .contact { margin-top: 16px; font-size: 14px; color: var(--muted); text-align: center; }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+<section>
+  <span class="badge">For Freshers & Beginners</span>
+  <h1>Confused After Graduation?<br>Learn Python + Django the Right Way.</h1>
+  <p>
+    Leafstacked is a guided learning path for freshers who want real skills.
+    Start from zero, build real Django projects, and gain confidence to apply for jobs or freelancing.
+  </p>
+
+  <a href="https://wa.me/YOUR_NUMBER_HERE?text=Hi%20I%20just%20graduated%20and%20want%20clarity%20on%20learning%20Python%20and%20Django" class="cta-btn">
+    Talk to Me on WhatsApp
+  </a>
+
+  <p style="font-size:14px; margin-top:8px;">Small batches • Beginner-friendly • No pressure</p>
+</section>
+
+<section class="card">
+  <h2>Your Learning Path</h2>
+  <div class="steps">
+    <div class="step"><span>1</span><p>Python basics from absolute zero.</p></div>
+    <div class="step"><span>2</span><p>How websites really work.</p></div>
+    <div class="step"><span>3</span><p>Django step-by-step with real features.</p></div>
+    <div class="step"><span>4</span><p>Projects you can confidently explain.</p></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Who Will Teach You?</h2>
+  <p>
+    I’m a Django developer who started confused after graduation.
+    I learned by building real projects, not memorizing tutorials.
+    Leafstacked exists so you don’t waste years figuring things out.
+  </p>
+</section>
+
+<section class="footer-cta">
+  <h2>Ready to Get Clarity?</h2>
+  <p>Message me. I’ll help you understand if this path is right for you.</p>
+
+  <a href="https://wa.me/YOUR_NUMBER_HERE?text=I%20want%20to%20understand%20the%20Leafstacked%20learning%20path" class="cta-btn">
+    Message Me on WhatsApp
+  </a>
+
+  <p style="font-size:14px; margin-top:10px;">Next batch starting soon. Limited seats.</p>
+</section>
+
+<div class="contact">
+  WhatsApp: +91-XXXXXXXXXX<br>
+  Telegram: @leafstacked
+</div>
+
+</div>
+</body>
+</html>
+
+
+<!-- =============================== -->
+<!-- FILE 2: roadmap.html -->
+<!-- =============================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leafstacked | Learning Roadmap</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: #020617; color: #e5e7eb; line-height: 1.6;
+    }
+    .container { max-width: 760px; margin: auto; padding: 24px 16px 80px; }
+    .card {
+      background: #0f172a; border-radius: 18px;
+      padding: 20px; margin-bottom: 24px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    h1 { font-size: 28px; margin-bottom: 12px; }
+    h2 { font-size: 22px; margin-bottom: 10px; }
+    h3 { font-size: 18px; margin-bottom: 6px; }
+    p, li { color: #9ca3af; font-size: 15px; }
+    ul { padding-left: 18px; }
+    .cta {
+      display: block; text-align: center; padding: 16px;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #020617; font-weight: 700; border-radius: 14px;
+      text-decoration: none; margin-top: 16px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+<section class="card">
+  <h1>Leafstacked Learning Roadmap</h1>
+  <p>This page is for students who want clarity before joining.</p>
+</section>
+
+<section class="card">
+  <h2>Phase 1: Python Foundations</h2>
+  <ul>
+    <li>Programming basics</li>
+    <li>Python syntax & logic</li>
+    <li>Problem solving mindset</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Phase 2: Django & Web</h2>
+  <ul>
+    <li>How the web works</li>
+    <li>Django projects & structure</li>
+    <li>Databases & dynamic pages</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Phase 3: Real Projects</h2>
+  <ul>
+    <li>Solo project</li>
+    <li>Group project</li>
+    <li>Interview explanation skills</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Want to Join?</h2>
+  <p>Message me and we’ll see if this journey fits you.</p>
+  <a href="https://wa.me/YOUR_NUMBER_HERE?text=I%20saw%20the%20Leafstacked%20roadmap%20and%20want%20clarity" class="cta">
+    Message Me on WhatsApp
+  </a>
+</section>
+
+</div>
+</body>
+</html>
