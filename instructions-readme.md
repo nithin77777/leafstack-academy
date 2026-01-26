@@ -165,7 +165,9 @@ We have:
 
 ### Color Palletes
 
+#213C51
+#75B06F
+#F0F8A4
 #F6F0D7
 #C5D89D
-#9CAB84
 #89986D
